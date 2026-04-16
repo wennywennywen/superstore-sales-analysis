@@ -10,7 +10,7 @@ import seaborn as sns
 st.title('SuperStore Sales Dashboard')
 st.write('An analysis of sales, profit, and discounts across regions, categories, and products.')
 
-df = pd.read_csv('../Sample - Superstore.csv', encoding='latin-1')
+df = pd.read_csv('Sample - Superstore.csv', encoding='latin-1')
 df['Order Date'] = pd.to_datetime(df['Order Date'])
 df['Year'] = df['Order Date'].dt.year
 df['Month'] = df['Order Date'].dt.month
